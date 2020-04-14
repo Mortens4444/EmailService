@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>EmailService</id>
+    <version>1.0.0</version>
+    <description>Helper library to send e-mail messages.</description>
+    <authors>Mortens</authors>
+    <copyright>Copyright © 2020</copyright>
+	<tags>SendMail SmtpServer SmtpAuthentication</tags>
+	<license type="expression">MIT</license>
+    <projectUrl>http://w3.hdsnet.hu/mortens/</projectUrl>
+    <repository type="git" url="https://github.com/Mortens4444/EmailService.git" branch="master" commit="" />
+  </metadata>
+  <files>
+    <file src="D:\Work\EmailService\EmailService\bin\Release\**" target="lib" />	
+  </files>
+</package>
