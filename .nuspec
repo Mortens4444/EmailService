@@ -9,7 +9,7 @@
 	<tags>SendMail SmtpServer SmtpAuthentication</tags>
 	<license type="expression">MIT</license>
     <projectUrl>http://w3.hdsnet.hu/mortens/</projectUrl>
-    <repository type="git" url="https://github.com/Mortens4444/EmailService.git" branch="master" commit="" />
+    <repository type="git" url="https://github.com/Mortens4444/EmailService.git" branch="master" commit="e2d63e8b875b4d0167a72e717dc991edd16b4301" />
   </metadata>
   <files>
     <file src="D:\Work\EmailService\EmailService\bin\Release\**" target="lib" />	
