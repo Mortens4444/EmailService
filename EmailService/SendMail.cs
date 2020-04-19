@@ -67,7 +67,7 @@ namespace EmailService
 
 		private void EndSending(MailMessage mailMessage, Exception exception)
 		{
-			SentChanged?.Invoke(this, new SentChangedEventArgs(exception == null, exception));
+			SentChanged?.Invoke(this, new SentChangedEventArgs(exception, mailMessage.From, mailMessage.To, mailMessage.CC, mailMessage.Bcc));
 			mailMessage.Dispose();
 			Interlocked.Exchange(ref resource, NotUsed);
 		}

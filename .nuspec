@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>EmailService</id>
+    <id>Mtf.EmailService</id>
     <version>1.0.0</version>
     <description>Helper library to send e-mail messages.</description>
     <authors>Mortens</authors>

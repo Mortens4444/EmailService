@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Mail;
 
 namespace EmailService.EventArgs
 {
@@ -8,10 +9,26 @@ namespace EmailService.EventArgs
 
 		public Exception Exception { get; }
 
-		public SentChangedEventArgs(bool sent, Exception exception)
+		public MailAddress From { get; }
+
+		public MailAddressCollection To { get; }
+
+		public MailAddressCollection CC { get; }
+
+		public MailAddressCollection Bcc { get; }
+
+		public SentChangedEventArgs(Exception exception,
+			MailAddress from,
+			MailAddressCollection to,
+			MailAddressCollection cc,
+			MailAddressCollection bcc)
 		{
-			Sent = sent;
+			Sent = exception == null;
 			Exception = exception;
+			From = from;
+			To = to;
+			CC = cc;
+			Bcc = bcc;
 		}
 	}
 }
